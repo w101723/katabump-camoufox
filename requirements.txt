@@ -1,0 +1,2 @@
+camoufox==0.5.4
+requests>=2.32,<3
