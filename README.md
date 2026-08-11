@@ -62,7 +62,7 @@ TG_CHAT_ID
 
 `Actions -> Katabump Auto Renew (Camoufox) -> Run workflow`
 
-Workflow 默认每 8 小时自动执行一次（UTC 00:07 / 08:07 / 16:07）。
+Workflow 默认每天自动执行一次（UTC 00:07 / 北京时间 08:07）。
 
 截图会上传到本次 Workflow Run 的 `screenshots` Artifact。
 
