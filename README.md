@@ -16,28 +16,6 @@ Playwright
 Katabump Dashboard
 ```
 
-本版本不再使用：
-
-- Google Chrome
-- Chrome DevTools Protocol / 9222 调试端口
-- Node.js / playwright-extra
-- puppeteer-extra-plugin-stealth
-- sing-box
-- PROXY_URL / HTTP_PROXY
-- `proxy_handler.py`
-- 0~3 小时随机 sleep
-
-保留：
-
-- 多账号
-- 登录
-- Turnstile 检测与 Playwright 原生点击
-- ALTCHA 状态检测与点击
-- Renew 流程
-- 截图 Artifact
-- Telegram 可选通知
-- 账号级独立 Browser Context
-
 ## GitHub Actions 使用
 
 ### 1. 配置 `USERS_JSON`
@@ -86,7 +64,7 @@ TG_CHAT_ID
 
 `Actions -> Katabump Auto Renew (Camoufox) -> Run workflow`
 
-Workflow 默认每天 UTC 00:00 自动执行。
+Workflow 默认每 8 小时自动执行一次（UTC 00:07 / 08:07 / 16:07）。
 
 截图会上传到本次 Workflow Run 的 `screenshots` Artifact。
 
@@ -169,24 +147,3 @@ katabump-camoufox/
 ├── requirements.txt
 └── README.md
 ```
-
-## 从旧版迁移
-
-旧仓库中的以下文件不再需要，可以删除：
-
-```text
-action_renew.js
-renew.js
-package.json
-proxy_handler.py
-start_chrome.bat
-```
-
-旧 Secrets 中以下项也不再使用：
-
-```text
-PROXY_URL
-HTTP_PROXY
-```
-
-只保留 `USERS_JSON`，以及可选的 `TG_BOT_TOKEN` / `TG_CHAT_ID`。
