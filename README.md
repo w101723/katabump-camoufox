@@ -11,8 +11,6 @@ Python 3.11
     ↓
 Camoufox
     ↓
-Playwright
-    ↓
 Katabump Dashboard
 ```
 
@@ -122,7 +120,7 @@ CAMOUFOX_HEADLESS=virtual python action_renew.py
 | `TG_CHAT_ID` | 否 | - | Telegram Chat ID |
 | `CAMOUFOX_HEADLESS` | 否 | Actions=`virtual` | `true` / `false` / `virtual` |
 | `MAX_RENEW_ATTEMPTS` | 否 | `8` | Renew 最大重试次数 |
-| `DEFAULT_TIMEOUT_MS` | 否 | `60000` | Playwright 默认超时 |
+| `DEFAULT_TIMEOUT_MS` | 否 | `60000` | 默认操作超时 |
 
 ## 结果状态
 
