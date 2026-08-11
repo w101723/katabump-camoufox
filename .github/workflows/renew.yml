@@ -2,8 +2,8 @@ name: Katabump Auto Renew (Camoufox)
 
 on:
   schedule:
-    # 每天 UTC 00:00（北京时间 08:00）
-    - cron: '0 0 * * *'
+    # 每 8 小时一次：UTC 00:07 / 08:07 / 16:07（北京时间 08:07 / 16:07 / 00:07）
+    - cron: '7 */8 * * *'
   workflow_dispatch:
 
 permissions:
